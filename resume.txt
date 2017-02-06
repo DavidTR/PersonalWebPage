@@ -1,0 +1,33 @@
+PersonalWebPage
+
+** Tutorial:
+
+https://www.tutorialspoint.com/angular2/angular2_environment.htm
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
++ 1. TSConfig:
+
+  Directivas de compilación para TypeScript. TS es un super grupo de Javascript: Contiene más directivas y de más alto nivel, que se compilan en Javscript.
+Al compilarse en Javascript, permite optimizar el rendimiento y disminuir los errores en tiempo de ejecución, frente a Javascript escrito directamente por un usuario.
+
++ 2. Typings:
+
+  Hay un gran número de librerías que extienden Javascript como tal (jQuery, etc...). En este archivo se localizan las dependencias necesarias para que Typescript
+incorpore esta nueva funcionalidad.
+
++ 3. Package:
+
+  Contiene los paquetes necesarios para que el proyecto funcione (usando para ello la herramienta npm).
+
+
++ 4. Environment.Component:
+
+  Importa los paquetes Component y View desde el core de Angular2. Se usan como decoradores y permiten asociar metadatos a la clase de "Component" de nuestra aplicación.
+Desde HTML podemos utilizar el tag "pwp-title" para inyectar lo que se especifica en la etiqueta View.
+
+  Con la directiva export especificamos que este componente se puede usar fuera del archivo.
+
++ 5. Environment_main:
+
+  Dice a Angular2 cómo ha de lanzar el componente. En este caso la aplicación se lanza con un único componente y el paquete bootstrap.
